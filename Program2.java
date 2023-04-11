@@ -19,7 +19,7 @@ private static int i;
         
     }
 
-//Метод заполнения массива числами
+//Метод заполнения массива числами. 
 public static int[] getFilledArray(int length){
     int[] array = new int[length];
     Random rnd = new Random();
