@@ -10,6 +10,7 @@ private static int i;
 
 
 //Метод создания массивов
+    
     public static void main(String[] args) { 
         int[] Array1 = getFilledArray(5);
         int[] Array2 = getFilledArray(5);
@@ -20,6 +21,7 @@ private static int i;
     }
 
 //Метод заполнения массива числами
+    
 public static int[] getFilledArray(int length){
     int[] array = new int[length];
     Random rnd = new Random();
@@ -31,10 +33,10 @@ public static int[] getFilledArray(int length){
 
 
 //Метод выброса исключений
+    
     public static int[] divArrays(int[] Array1, int[] Array2) { 
         if(Array1.length != Array2.length) throw new RuntimeException("Длины массивов не равны");
         System.out.println("\nПовторите попытку.");
-        
        
         if (Array1 == null || Array2 == null)
         throw new NullPointerException("Искомый элемент не найден");
@@ -42,10 +44,10 @@ public static int[] getFilledArray(int length){
        
 
         int[] resultArr = new int[Array1.length];
-
         try {
-    
+            
         resultArr[i] = Array1[i]/Array2[i];
+            
         } catch (ArithmeticException e) {
             System.out.println("На ноль делить нельзя.");
             System.out.println("\nПовторите попытку.");
