@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Task2 {
 private static int i;
 
-
 //Метод создания массивов
     public static void main(String[] args) { 
         int[] Array1 = getFilledArray(5);
