@@ -7,14 +7,18 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Task2 {
+    
 //Метод создания массивов
+    
     public static void main(String[] args) { 
         int[] Array1 = getFilledArray(5);
         int[] Array2 = getFilledArray(6);
 
         int[] divArray = divArrays(Array1, Array2);
     }
+    
 //Метод выброса исключений
+    
     public static int[] divArrays(int[] Array1, int[] Array2) { 
         if(Array1.length != Array2.length) throw new RuntimeException("Ошибка! Длины массивов не равны");
         System.out.println("\nПовторите попытку ввода.");
@@ -30,7 +34,9 @@ public class Task2 {
         System.out.println("\nПовторите попытку ввода.");
         
     }
+    
 //Метод заполнения массива числами
+    
     public static int[] getFilledArray(int length){
         int[] array = new int[length];
         Random rnd = new Random();
