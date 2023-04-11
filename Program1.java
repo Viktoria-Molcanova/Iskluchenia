@@ -18,7 +18,7 @@ public class Task2 {
     public static int[] divArrays(int[] Array1, int[] Array2) { 
         if(Array1.length != Array2.length) throw new RuntimeException("Ошибка! Длины массивов не равны");
         System.out.println("\nПовторите попытку ввода.");
-        scanner.nextLine();
+        break;
         int[] resultArr = new int[Array1.length];
         for (int i = 0; i < resultArr.length; i++) {
             resultArr[i] = Array1[i] - Array2[i];
@@ -28,7 +28,7 @@ public class Task2 {
         if (Array1 == null || Array2 == null)
         throw new NullPointerException("Ошибка! Оба массива должны существовать");
         System.out.println("\nПовторите попытку ввода.");
-        scanner.nextLine();
+        break;
     }
 //Метод заполнения массива числами
     public static int[] getFilledArray(int length){
