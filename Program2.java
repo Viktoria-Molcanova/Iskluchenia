@@ -33,12 +33,12 @@ public static int[] getFilledArray(int length){
 //Метод выброса исключений
     public static int[] divArrays(int[] Array1, int[] Array2) { 
         if(Array1.length != Array2.length) throw new RuntimeException("Длины массивов не равны");
-        System.out.println("\nПовторите попытку ввода.");
+        System.out.println("\nПовторите попытку.");
         
        
         if (Array1 == null || Array2 == null)
         throw new NullPointerException("Искомый элемент не найден");
-        System.out.println("\nПовторите попытку ввода.");
+        System.out.println("\nПовторите попытку.");
         
 
         int[] resultArr = new int[Array1.length];
@@ -48,7 +48,7 @@ public static int[] getFilledArray(int length){
         resultArr[i] = Array1[i]/Array2[i];
         } catch (ArithmeticException e) {
             System.out.println("На ноль делить нельзя.");
-            System.out.println("\nПовторите попытку ввода.");
+            System.out.println("\nПовторите попытку.");
         
         }
 
