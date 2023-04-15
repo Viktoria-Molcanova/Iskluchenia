@@ -11,7 +11,7 @@ public class Main {
       //Выброс исключения пустые строки
       
     if(str.isEmpty())
-      throw new IllegalArgumentException("Нельзя вводить пустые строки!");
+      throw new IllegalArgumentException("Строку нельзя оставлять пустой!");
       System.out.println("Повторите попытку ввода.");
       scanner.nextLine();
     else
