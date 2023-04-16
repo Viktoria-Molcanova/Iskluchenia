@@ -26,11 +26,8 @@ public static void main(String[] args) {
   System.out.println("Число для поиска указано некорректно.\nПовторите попытку ввода");
   scanner.nextLine();
   }
-    return 0;
-  }
-         
-         
-        
+   
+  }        
         
   }
     }
