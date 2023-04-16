@@ -1,3 +1,4 @@
+package HomeWork1;
 import java.util.*;
 
 public class Main {
@@ -10,12 +11,14 @@ public class Main {
       
       //Выброс исключения пустые строки
       
-    if(str.isEmpty())
+    if(str.isEmpty()){
       throw new IllegalArgumentException("Строку нельзя оставлять пустой!");
       System.out.println("Повторите попытку ввода.");
       scanner.nextLine();
-    else
+    }
+    else{
       System.out.println(str);
+    }
     return str;
   }
 }
