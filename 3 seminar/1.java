@@ -11,7 +11,7 @@ public class JV {
                     Scanner scanner = new Scanner(System.in);
                     while (true) {
                          System.out.println(
-                                   "Введите данные через ПРОБЕЛ (строка должна содержать Ф.И.О, дату рождения - ddmmyyyy, номер телефона - целое беззнаковое число , пол - f/m ) : ");
+                                   "Введите данные в следующем порядке через ПРОБЕЛ (строка должна содержать Ф.И.О, дату рождения - ddmmyyyy, номер телефона - целое беззнаковое число , пол - f/m ) : ");
                          String data = scanner.nextLine();
                          String[] arrayData = data.split(" ");
                          if (arrayData.length == 6) {
@@ -180,6 +180,8 @@ public class JV {
                }
 
           }
+          class Prog {
+         public static void main(String[] args) {
           PARS PARS = new PARS();
           String newFileName = null;
           WRITE WRITE = new WRITE();
@@ -194,6 +196,7 @@ public class JV {
           }
 
           newFileName = data.get("Фамилия") + ".txt";
+          System.out.println("Данные успешно записаны в файл");
           StringBuilder sb = new StringBuilder();
           for (String str : data.keySet()) {
                sb.append(data.get(str));
