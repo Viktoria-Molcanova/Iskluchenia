@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class PY {
+public class JV {
      public static void main(String[] args) {
 
           class INPUT {
