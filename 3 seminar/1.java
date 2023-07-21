@@ -17,9 +17,9 @@ public class JV {
                          if (arrayData.length == 6) {
                               return arrayData;
                          } else if (arrayData.length < 6) {
-                              System.out.println("Ошибка! Неверный ввод данных");
+                              System.out.println("Ошибка! Вы ввели меньше данных, чем требуется");
                          } else
-                              System.out.println("Ошибка! Неверный ввод данных");
+                              System.out.println("Ошибка! Вы ввели больше данных, чем требуется");
                     }
 
                }
@@ -45,7 +45,7 @@ public class JV {
 
                public void sexException(String i) {
                     System.out.println("Exception: SexNotCorrectData");
-                    System.out.printf("Не корректный формат введения", i);
+                    System.out.printf("Не корректный формат введения пола", i);
                     System.out.println();
                }
           }
@@ -53,9 +53,9 @@ public class JV {
                public DateException() {
                }
 
-               public void dataException(String i) {
+               public void dateException(String i) {
                     System.out.println("Exception: DateNotCorrectFormat");
-                    System.out.printf("Не корректный формат введения", i);
+                    System.out.printf("Не корректный формат введения даты", i);
                     System.out.println();
                }
           }
@@ -65,7 +65,7 @@ public class JV {
 
                public void dataException(String i) {
                     System.out.println("Exception: DataNotCorrectFormat");
-                    System.out.printf("Не корректный формат введения", i);
+                    System.out.printf("Не корректный формат введения данных", i);
                     System.out.println();
                }
           }
